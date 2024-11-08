@@ -41,8 +41,8 @@
         /* 小球样式 */
         .ball {
             position: absolute; /* 相对于父容器定位 */
-            width: 15px;
-            height: 15px;
+            width: 30px;
+            height: 30px;
             background-color: white;
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -93,11 +93,11 @@
         </label>
         <label>
             运动速度 (ms):
-            <input type="number" id="moveSpeed" min="500" max="5000" value="100">
+            <input type="number" id="moveSpeed" min="500" max="5000" value="1000">
         </label>
         <label>
             停留时长 (ms):
-            <input type="number" id="stayDuration" min="100" max="5000" value="1000">
+            <input type="number" id="stayDuration" min="50" max="5000" value="100">
         </label>
         <label>
             背景颜色:
@@ -129,7 +129,7 @@
 
         let columns, rows, cellWidth, cellHeight;
         let moveSpeed = 1000; // 默认运动速度
-        let stayDuration = 1000; // 默认停留时长
+        let stayDuration = 100; // 默认停留时长
 
         function updateGridDimensions() {
             // 设置网格的列数和行数，确保自适应窗口大小
